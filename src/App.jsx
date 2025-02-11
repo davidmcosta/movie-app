@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-import Serach from "./components/Serach";
+import Search from "./components/Search";
 import Spinner from "./components/Spinner";
 import MoviesCard from "./components/MoviesCard";
 import { useDebounce } from "react-use";
@@ -95,7 +95,7 @@ const App = () => {
             Find <span className="text-gradient">Movies</span> You'll Enjoy
             Without the Hassel
           </h1>
-          <Serach serachItem={searchItem} setSearchItem={setSearchItem} />
+          <Search searchItem={searchItem} setSearchItem={setSearchItem} />
         </header>
         {trendingMovies.length > 0 ? searchItem === ''?  (
           <section className = "trending">
@@ -114,7 +114,7 @@ const App = () => {
         ):null:null}
 
         <section className="all-movies">
-          <h2>Popular Movie List</h2>
+          <h2>Movie List</h2>
           {isloading ? (
             <Spinner />
           ) : errorMessage ? (

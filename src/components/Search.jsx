@@ -1,8 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-
-
-const Search = ({ searchTerm, setSearchTerm }) => {
+const Search = ({ searchItem, setSearchItem }) => {
   return (
     <div className='search'>
         <div>
@@ -10,12 +8,12 @@ const Search = ({ searchTerm, setSearchTerm }) => {
             <input
                 type='text'
                 placeholder='Search for a movie...'
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+                value={searchItem}
+                onChange={(e) => setSearchItem(e.target.value)}
             />
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;
