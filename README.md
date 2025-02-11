@@ -1,4 +1,4 @@
-I'm excited to introduce my latest project: Movie App — a comprehensive platform to discover, search, and explore films.
+Movie App — a comprehensive platform to discover, search, and explore films.
 
 Built from the ground up using React and Vite, this application leverages the robust TMDB API to provide real-time movie data.
 
